@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building calculator</title>
+    <link rel="stylesheet" href="sheet.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1> Calculator</h1>
+        <div class="display">
+            <input type="text" id="calcInput" placeholder="Enter calculation" readonly>
+        </div>
+        <div class="buttons">
+            <button onclick="appendInput('7')">7</button>
+            <button onclick="appendInput('8')">8</button>
+            <button onclick="appendInput('9')">9</button>
+            <button onclick="appendInput('/')">/</button>
+            <button onclick="appendInput('4')">4</button>
+            <button onclick="appendInput('5')">5</button>
+            <button onclick="appendInput('6')">6</button>
+            <button onclick="appendInput('')"></button>
+            <button onclick="appendInput('1')">1</button>
+            <button onclick="appendInput('2')">2</button>
+            <button onclick="appendInput('3')">3</button>
+            <button onclick="appendInput('-')">-</button>
+            <button onclick="appendInput('0')">0</button>
+            <button onclick="appendInput('.')">.</button>
+            <button onclick="calculate()">=</button>
+            <button onclick="appendInput('+')">+</button>
+            
+        </div>
+        <div class="history">
+            <h2>History</h2>
+            <ul id="historyList"></ul>
+        </div>
+    </div>
+    <script src="styling.js"></script>
+</body>
+</html>
